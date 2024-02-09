@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#f44336, #730228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  width: 20rem;
+  /* border: 2px solid black; */
+}
+
+#selectField {
+  width: 100%;
+  position: relative;
+  background-color: rgba(240, 248, 255, 0.331);
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+#selectField p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+#selectField img {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.8rem;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  background-color: rgba(240, 248, 255, 0.331);
+  visibility: hidden;
+  border-radius: 0.3rem;
+}
+.menu ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+.menu ul li img {
+  width: 1.5rem;
+}
+
+.menu ul li:hover {
+  background-color: rgba(240, 248, 255, 0.418);
+}
+
+.upperSideArrow {
+  transform: translateY(-45%) rotate(180deg) !important;
+}
+.showMenu {
+  visibility: visible !important;
+}
+
+@media only screen and (max-width: 384px) {
+  .menu {
+    width: 15rem;
+  }
+}
